@@ -21,7 +21,7 @@ object Constants {
     val BASE_URL= "https://api.themoviedb.org/3/"
     val API_KEY = "df57ebe7d0723991d4ab8564e57256dcjdpp"
 
-   //https://api.themoviedb.org/3/movie/popular?page=10&api_key=df57ebe7d0723991d4ab8564e57256dc
+   //https://api.themoviedb.org/3/movie/popular?page=10&api_key=df57ebe7d0723991d4ab8564e57256dcjdpppdad
 
 
 }
