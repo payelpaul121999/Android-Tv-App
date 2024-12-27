@@ -24,7 +24,7 @@ interface UserAPI {
     @GET("movie/popular")
     suspend fun getPopularMovies(
         @Query("api_key") apiKey:String,
-        @Query("page") page: Int
+       // @Query("page") page: Int
        ): Response<MovieList>
 
     @GET("tv/popular")

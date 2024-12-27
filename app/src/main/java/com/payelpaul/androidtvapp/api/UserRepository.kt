@@ -15,6 +15,6 @@ class UserRepository @Inject constructor(private val service: UserAPI) {
     suspend fun getMovieDetails(id: Int, apiKey: String) = service.getMovieDetails(id,apiKey)
 
 
-    suspend fun getMovieList(apiKey: String,page:Int) = service.getPopularMovies(apiKey,page)
+    suspend fun getMovieList(apiKey: String,page:Int) = service.getPopularMovies(apiKey/*,page*/)
     suspend fun getTvShowList(apiKey: String,page:Int) = service.getPopularTvShow(apiKey,page)
 }
