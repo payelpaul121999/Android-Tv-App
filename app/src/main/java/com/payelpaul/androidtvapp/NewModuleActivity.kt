@@ -30,6 +30,11 @@ private lateinit var binding : ActivityNewModuleBinding
         val layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.tabRecyclerview.layoutManager = layoutManager
         val adapter = ScreenNameAdapter(items) { name ->
+            navigate(name)
+        }
+        binding.tabRecyclerview.adapter = adapter
+    }
+    fun navigate(name:String){
         when(name) {
             "Home"->{
                 changeFragment(LaunchFragment())
@@ -47,8 +52,6 @@ private lateinit var binding : ActivityNewModuleBinding
                 changeFragment(SportFragment())
             }
         }
-        }
-        binding.tabRecyclerview.adapter = adapter
     }
     fun changeFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
